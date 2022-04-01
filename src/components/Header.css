@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: var(--header-height);
+    background-position-y: center;
+    background: linear-gradient(90deg, rgba(170,67,227,1) 0%, rgba(177,88,236,1) 48%, rgba(54,188,255,1) 100%);
+}
+
+.header h1{
+    z-index: 1;
+    position: relative;
+    color: white;
+    letter-spacing: 5px;
+    width: var(--block-width);
+}
+
+.header .background-image{
+    position: absolute;
+    height: var(--header-height);
+    width: 100%;
+    object-fit: cover;
+    opacity: 40%;
+    z-index: 0;
+}

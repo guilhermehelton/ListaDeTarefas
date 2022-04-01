@@ -1,0 +1,95 @@
+.listItem{
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listItem label{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.listItem label .input-text{
+    margin-left: 1em;
+}
+
+.check-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.check-wrapper input{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.check-wrapper .check-hover{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1.3em;
+    height: 1.3em;
+    border: solid 1px #777;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.check-wrapper input:checked + .check-hover{
+    background: rgb(54,188,255);
+    background: linear-gradient(142deg, rgba(54,188,255,1) 0%, rgba(88,127,236,1) 48%, rgba(170,67,227,1) 100%);
+}
+
+.check-wrapper input:checked ~ .check-hover::after{
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: white;
+    transform-origin: bottom left;
+    transform: rotate(45deg)
+}
+.mark{
+    text-decoration: line-through;
+    color: #888;
+}
+
+.remove{
+    width: 2em;
+    height: 2em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.remove:hover{
+    transition: all 0.2s ease-in;
+    background-color: rgba(202, 201, 201, 0.425);
+}

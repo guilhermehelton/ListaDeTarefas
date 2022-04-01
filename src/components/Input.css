@@ -1,0 +1,17 @@
+.form{
+    margin-top: 60px;
+    width: var(--block-width);
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.form input{
+    border: none;
+    padding: 1rem;
+    width: 90%;
+    outline: 0;
+}
